@@ -1,0 +1,212 @@
+
+---------Log--snippet
+2024-02-08T17:18:47.430+01:00 DEBUG 36514 --- [nio-8443-exec-5] o.a.catalina.connector.CoyoteAdapter     :  Requested cookie session id is 77D524EB356C0DD8D6B389CBD13D8EE3
+2024-02-08T17:18:47.431+01:00 DEBUG 36514 --- [nio-8443-exec-5] o.a.c.authenticator.AuthenticatorBase    : Security checking request GET /user
+2024-02-08T17:18:47.431+01:00 DEBUG 36514 --- [nio-8443-exec-5] org.apache.catalina.realm.RealmBase      :   No applicable constraints defined
+2024-02-08T17:18:47.433+01:00 DEBUG 36514 --- [nio-8443-exec-5] o.a.c.a.jaspic.AuthConfigFactoryImpl     : Loading persistent provider registrations from [/private/var/folders/mm/91z2f4_s2fsbmgkw65qdlw240000gn/T/tomcat.8443.1734974130019360190/conf/jaspic-providers.xml]
+2024-02-08T17:18:47.433+01:00 DEBUG 36514 --- [nio-8443-exec-5] o.a.c.authenticator.AuthenticatorBase    : Not subject to any constraint
+2024-02-08T17:18:47.434+01:00  INFO 36514 --- [nio-8443-exec-5] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-08T17:18:47.434+01:00  INFO 36514 --- [nio-8443-exec-5] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-08T17:18:47.435+01:00 TRACE 36514 --- [nio-8443-exec-5] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'multipartResolver'
+2024-02-08T17:18:47.435+01:00 TRACE 36514 --- [nio-8443-exec-5] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.multipart.support.StandardServletMultipartResolver@2fb1cf96
+2024-02-08T17:18:47.435+01:00 TRACE 36514 --- [nio-8443-exec-5] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'localeResolver'
+2024-02-08T17:18:47.435+01:00 TRACE 36514 --- [nio-8443-exec-5] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver@4f570e0d
+2024-02-08T17:18:47.435+01:00 TRACE 36514 --- [nio-8443-exec-5] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'themeResolver'
+2024-02-08T17:18:47.435+01:00 TRACE 36514 --- [nio-8443-exec-5] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.theme.FixedThemeResolver@893e5a6
+2024-02-08T17:18:47.436+01:00 TRACE 36514 --- [nio-8443-exec-5] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'welcomePageHandlerMapping'
+2024-02-08T17:18:47.436+01:00 TRACE 36514 --- [nio-8443-exec-5] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'welcomePageNotAcceptableHandlerMapping'
+2024-02-08T17:18:47.436+01:00 TRACE 36514 --- [nio-8443-exec-5] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'requestMappingHandlerMapping'
+2024-02-08T17:18:47.436+01:00 TRACE 36514 --- [nio-8443-exec-5] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'viewControllerHandlerMapping'
+2024-02-08T17:18:47.436+01:00 TRACE 36514 --- [nio-8443-exec-5] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'beanNameHandlerMapping'
+2024-02-08T17:18:47.436+01:00 TRACE 36514 --- [nio-8443-exec-5] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'routerFunctionMapping'
+2024-02-08T17:18:47.436+01:00 TRACE 36514 --- [nio-8443-exec-5] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'resourceHandlerMapping'
+2024-02-08T17:18:47.436+01:00 TRACE 36514 --- [nio-8443-exec-5] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'defaultServletHandlerMapping'
+2024-02-08T17:18:47.436+01:00 TRACE 36514 --- [nio-8443-exec-5] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'requestMappingHandlerAdapter'
+2024-02-08T17:18:47.436+01:00 TRACE 36514 --- [nio-8443-exec-5] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'handlerFunctionAdapter'
+2024-02-08T17:18:47.436+01:00 TRACE 36514 --- [nio-8443-exec-5] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'httpRequestHandlerAdapter'
+2024-02-08T17:18:47.436+01:00 TRACE 36514 --- [nio-8443-exec-5] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'simpleControllerHandlerAdapter'
+2024-02-08T17:18:47.436+01:00 TRACE 36514 --- [nio-8443-exec-5] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'errorAttributes'
+2024-02-08T17:18:47.436+01:00 TRACE 36514 --- [nio-8443-exec-5] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'handlerExceptionResolver'
+2024-02-08T17:18:47.436+01:00 TRACE 36514 --- [nio-8443-exec-5] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'viewNameTranslator'
+2024-02-08T17:18:47.436+01:00 TRACE 36514 --- [nio-8443-exec-5] o.s.web.servlet.DispatcherServlet        : Detected DefaultRequestToViewNameTranslator
+2024-02-08T17:18:47.436+01:00 TRACE 36514 --- [nio-8443-exec-5] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'beanNameViewResolver'
+2024-02-08T17:18:47.436+01:00 TRACE 36514 --- [nio-8443-exec-5] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'mvcViewResolver'
+2024-02-08T17:18:47.436+01:00 TRACE 36514 --- [nio-8443-exec-5] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'defaultViewResolver'
+2024-02-08T17:18:47.436+01:00 TRACE 36514 --- [nio-8443-exec-5] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'viewResolver'
+2024-02-08T17:18:47.436+01:00 TRACE 36514 --- [nio-8443-exec-5] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'flashMapManager'
+2024-02-08T17:18:47.436+01:00 TRACE 36514 --- [nio-8443-exec-5] o.s.web.servlet.DispatcherServlet        : Detected SessionFlashMapManager
+2024-02-08T17:18:47.436+01:00 DEBUG 36514 --- [nio-8443-exec-5] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-02-08T17:18:47.436+01:00  INFO 36514 --- [nio-8443-exec-5] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-02-08T17:18:47.436+01:00 DEBUG 36514 --- [nio-8443-exec-5] o.apache.catalina.core.StandardWrapper   :   Returning instance
+2024-02-08T17:18:47.439+01:00 TRACE 36514 --- [nio-8443-exec-5] o.s.b.w.s.f.OrderedRequestContextFilter  : Bound request context to thread: org.apache.catalina.connector.RequestFacade@2269ea20
+2024-02-08T17:18:47.439+01:00 TRACE 36514 --- [nio-8443-exec-5] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'springSecurityFilterChain'
+2024-02-08T17:18:47.442+01:00 DEBUG 36514 --- [nio-8443-exec-5] o.a.tomcat.util.net.jsse.JSSESupport     : Cert #0 = [
+[
+  Version: V1
+  Subject: CN=postman.pqc.test.com, OU=OU, O=OU, L=Frankfurt, ST=hessen, C=DE
+  Signature Algorithm: SHA256withRSA, OID = 1.2.840.113549.1.1.11
+
+  Key:  Sun RSA public key, 2048 bits
+  params: null
+  modulus: 26779498707652174346926121994212485571357139166714608661717862713963301894197882779325064283570124297259627761877510367360291710035355489884301644772977914802994282339013989457812111873181366983357362896175549598277953681249152125033752042379740180427942008385023362678610942204619206359370123239323881164622637001190332200873421325484231944196418277663733962424203332491438713932100433502527991128862904170808957723015251315801975341605988913083273711665917227247285819339922505969500470671025835753692676511593986775474354902716736038780252571850118305443085072185584318747409903713083355371825059621695587435015611
+  public exponent: 65537
+  Validity: [From: Wed Feb 07 23:09:24 CET 2024,
+               To: Wed Jun 11 00:09:24 CEST 3023]
+  Issuer: L=San Fransisco, C=US, CN=demo.root.com
+  SerialNumber: [    01]
+
+]
+  Algorithm: [SHA256withRSA]
+  Signature:
+0000: 2C E4 6F 06 75 E7 2E 79   96 DA 0E 59 8C 41 E3 31  ,.o.u..y...Y.A.1
+0010: C7 A3 39 8D 6B 71 14 5D   FD 6C 14 35 6B FF 4D F8  ..9.kq.].l.5k.M.
+0020: 43 78 2B 3C AF 91 F3 C4   B0 4D D8 46 63 9A 64 E3  Cx+<.....M.Fc.d.
+0030: F6 98 8C 3F 26 59 D8 43   9E 23 CF 35 FE EB 66 0F  ...?&Y.C.#.5..f.
+0040: 13 DD C7 A3 39 38 61 16   70 3C C4 CF ED FB 34 C5  ....98a.p<....4.
+0050: E9 54 A8 3A E7 C0 C0 7A   3F 27 90 00 03 D4 8F 9B  .T.:...z?'......
+0060: F9 E6 D4 1D 9C AD 20 F1   A4 BF DF 4E 06 17 30 98  ...... ....N..0.
+0070: 55 0C DD 2F 63 43 D4 A1   FE 6E 07 E2 79 56 56 D7  U../cC...n..yVV.
+0080: E2 53 97 BA 44 44 F5 45   1B E2 40 9F C2 4D D7 5F  .S..DD.E..@..M._
+0090: 8D D9 6A 73 16 89 49 3E   E5 1F BB 11 52 06 37 97  ..js..I>....R.7.
+00A0: CB 21 BF 21 A6 34 22 0D   3A CA E7 F5 84 98 A6 39  .!.!.4".:......9
+00B0: 0F A5 42 18 36 88 1E 7D   93 37 EE 55 05 00 90 57  ..B.6....7.U...W
+00C0: 42 9A 41 A8 40 CC DC 49   6A F8 5B 76 48 01 13 7B  B.A.@..Ij.[vH...
+00D0: 1B 81 BB B8 26 5D BD 4D   27 95 1D 7E 20 2F A2 12  ....&].M'... /..
+00E0: F8 A1 83 30 21 78 33 05   02 DE C0 4C 06 A7 6D FF  ...0!x3....L..m.
+00F0: 29 DC 0C 7F BB 4F D1 40   B4 04 19 AF 38 9F 4A 5A  )....O.@....8.JZ
+
+]
+2024-02-08T17:18:47.445+01:00 DEBUG 36514 --- [nio-8443-exec-5] o.a.tomcat.util.net.jsse.JSSESupport     : Cert #1 = [
+[
+  Version: V1
+  Subject: L=San Fransisco, C=US, CN=demo.root.com
+  Signature Algorithm: SHA256withRSA, OID = 1.2.840.113549.1.1.11
+
+  Key:  Sun RSA public key, 2048 bits
+  params: null
+  modulus: 30176739259224967692922262968012881946813394793204336881523437877353313355428803728555557876459386256978983072791608432949101672154092033575874168838813516781089083200621869986416192951883380038550921876215642399205727296803379738376150139556263552035131154249948150351445925138670469891963317793785142998072081663361277693698094277031390248890913391884408078862035360063994850068198949892414346386149534785984448240391559424237080057914808618342882952134260305209505891805676369747521507997045528042350707179903282715418069292950544296137259985761894085393811485495112878610191130660162254642870045005444524057539417
+  public exponent: 65537
+  Validity: [From: Sun Feb 04 15:51:18 CET 2024,
+               To: Sat Jan 25 15:51:18 CET 2025]
+  Issuer: L=San Fransisco, C=US, CN=demo.root.com
+  SerialNumber: [    9ce7f3a4 77d16c08]
+
+]
+  Algorithm: [SHA256withRSA]
+  Signature:
+0000: 65 56 1D 09 4A A8 AF 57   7F B4 AD 96 60 58 22 0F  eV..J..W....`X".
+0010: 02 43 E6 3F F7 91 E1 D0   D2 47 66 45 43 17 7D 91  .C.?.....GfEC...
+0020: 4F 3D 10 8F C9 87 CB 58   24 84 88 7B C7 E5 7C 09  O=.....X$.......
+0030: C8 2B 0F 48 08 79 54 3A   88 5B 77 3E 8D 14 BC A6  .+.H.yT:.[w>....
+0040: 1E 7E 37 55 80 B8 4E A6   AB BC 41 B7 A7 4A FF 26  ..7U..N...A..J.&
+0050: 59 39 C8 F5 F2 4A 59 46   AE 6F 7B 0D CF F8 49 8B  Y9...JYF.o....I.
+0060: 9E 10 48 C7 6A 9B 41 C8   1C 0F DD CF 5A A9 F2 0B  ..H.j.A.....Z...
+0070: 88 F8 0A 6F 29 09 EB 7D   E9 CA DE 95 20 73 56 E0  ...o)....... sV.
+0080: F9 71 6E 95 A7 25 B3 A6   53 29 36 C7 04 13 36 B6  .qn..%..S)6...6.
+0090: 9C B7 F8 D4 1C 32 1E 0F   A0 2F 10 AB 45 45 D6 67  .....2.../..EE.g
+00A0: EF 04 F0 6C 26 C3 EE 45   B7 6E F3 73 E8 1A 88 9F  ...l&..E.n.s....
+00B0: EC 26 FD F3 74 E6 1B 74   2E 90 64 ED 5D 9C 5E E1  .&..t..t..d.].^.
+00C0: EF 98 06 47 D7 F0 8F 11   2B FD BB BE 14 36 EF 50  ...G....+....6.P
+00D0: EE E4 DE 21 3B FA 50 18   D5 89 A5 4E 15 D9 E1 97  ...!;.P....N....
+00E0: B8 3B DF A6 9D 3E 1D 36   2B B1 5E BD 31 76 DE 09  .;...>.6+.^.1v..
+00F0: 45 F8 E3 50 6A 92 88 DC   94 11 2A 2C A3 09 60 83  E..Pj.....*,..`.
+
+]
+2024-02-08T17:18:47.453+01:00 TRACE 36514 --- [nio-8443-exec-5] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'greetingController'
+2024-02-08T17:18:47.456+01:00 TRACE 36514 --- [nio-8443-exec-5] o.s.security.web.FilterChainProxy        : Trying to match request against DefaultSecurityFilterChain [RequestMatcher=any request, Filters=[org.springframework.security.web.session.DisableEncodeUrlFilter@610d28b8, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@53c99b09, org.springframework.security.web.context.SecurityContextHolderFilter@39ee94de, org.springframework.security.web.header.HeaderWriterFilter@54e12f4c, org.springframework.web.filter.CorsFilter@2539cd1c, org.springframework.security.web.csrf.CsrfFilter@76544c0a, org.springframework.security.web.authentication.logout.LogoutFilter@7112ce6, org.springframework.security.web.authentication.preauth.x509.X509AuthenticationFilter@682abca7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4c6b4ed7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@21263314, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7c20cdd0, org.springframework.security.web.access.ExceptionTranslationFilter@30c3ae63, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@27443560]] (1/1)
+2024-02-08T17:18:47.474+01:00 DEBUG 36514 --- [nio-8443-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /user
+2024-02-08T17:18:47.475+01:00 TRACE 36514 --- [nio-8443-exec-5] o.s.security.web.FilterChainProxy        : Invoking DisableEncodeUrlFilter (1/13)
+2024-02-08T17:18:47.475+01:00 TRACE 36514 --- [nio-8443-exec-5] o.s.security.web.FilterChainProxy        : Invoking WebAsyncManagerIntegrationFilter (2/13)
+2024-02-08T17:18:47.476+01:00 TRACE 36514 --- [nio-8443-exec-5] o.s.security.web.FilterChainProxy        : Invoking SecurityContextHolderFilter (3/13)
+2024-02-08T17:18:47.477+01:00 TRACE 36514 --- [nio-8443-exec-5] o.s.security.web.FilterChainProxy        : Invoking HeaderWriterFilter (4/13)
+2024-02-08T17:18:47.477+01:00 TRACE 36514 --- [nio-8443-exec-5] o.s.security.web.FilterChainProxy        : Invoking CorsFilter (5/13)
+2024-02-08T17:18:47.478+01:00 TRACE 36514 --- [nio-8443-exec-5] o.s.security.web.FilterChainProxy        : Invoking CsrfFilter (6/13)
+2024-02-08T17:18:47.479+01:00 TRACE 36514 --- [nio-8443-exec-5] o.s.security.web.csrf.CsrfFilter         : Did not protect against CSRF since request did not match CsrfNotRequired [TRACE, HEAD, GET, OPTIONS]
+2024-02-08T17:18:47.479+01:00 TRACE 36514 --- [nio-8443-exec-5] o.s.security.web.FilterChainProxy        : Invoking LogoutFilter (7/13)
+2024-02-08T17:18:47.479+01:00 TRACE 36514 --- [nio-8443-exec-5] o.s.s.w.a.logout.LogoutFilter            : Did not match request to Ant [pattern='/logout', POST]
+2024-02-08T17:18:47.479+01:00 TRACE 36514 --- [nio-8443-exec-5] o.s.security.web.FilterChainProxy        : Invoking X509AuthenticationFilter (8/13)
+2024-02-08T17:18:47.479+01:00 TRACE 36514 --- [nio-8443-exec-5] w.c.HttpSessionSecurityContextRepository : No HttpSession currently exists
+2024-02-08T17:18:47.479+01:00 TRACE 36514 --- [nio-8443-exec-5] .s.s.w.c.SupplierDeferredSecurityContext : Created SecurityContextImpl [Null authentication]
+2024-02-08T17:18:47.479+01:00 TRACE 36514 --- [nio-8443-exec-5] .s.s.w.c.SupplierDeferredSecurityContext : Created SecurityContextImpl [Null authentication]
+2024-02-08T17:18:47.479+01:00 DEBUG 36514 --- [nio-8443-exec-5] o.s.s.w.a.p.x.X509AuthenticationFilter   : Authenticating null
+2024-02-08T17:18:47.480+01:00 DEBUG 36514 --- [nio-8443-exec-5] o.s.s.w.a.p.x.X509AuthenticationFilter   : X.509 client authentication certificate:[
+[
+  Version: V1
+  Subject: CN=postman.pqc.test.com, OU=OU, O=OU, L=Frankfurt, ST=hessen, C=DE
+  Signature Algorithm: SHA256withRSA, OID = 1.2.840.113549.1.1.11
+
+  Key:  Sun RSA public key, 2048 bits
+  params: null
+  modulus: 26779498707652174346926121994212485571357139166714608661717862713963301894197882779325064283570124297259627761877510367360291710035355489884301644772977914802994282339013989457812111873181366983357362896175549598277953681249152125033752042379740180427942008385023362678610942204619206359370123239323881164622637001190332200873421325484231944196418277663733962424203332491438713932100433502527991128862904170808957723015251315801975341605988913083273711665917227247285819339922505969500470671025835753692676511593986775474354902716736038780252571850118305443085072185584318747409903713083355371825059621695587435015611
+  public exponent: 65537
+  Validity: [From: Wed Feb 07 23:09:24 CET 2024,
+               To: Wed Jun 11 00:09:24 CEST 3023]
+  Issuer: L=San Fransisco, C=US, CN=demo.root.com
+  SerialNumber: [    01]
+
+]
+  Algorithm: [SHA256withRSA]
+  Signature:
+0000: 2C E4 6F 06 75 E7 2E 79   96 DA 0E 59 8C 41 E3 31  ,.o.u..y...Y.A.1
+0010: C7 A3 39 8D 6B 71 14 5D   FD 6C 14 35 6B FF 4D F8  ..9.kq.].l.5k.M.
+0020: 43 78 2B 3C AF 91 F3 C4   B0 4D D8 46 63 9A 64 E3  Cx+<.....M.Fc.d.
+0030: F6 98 8C 3F 26 59 D8 43   9E 23 CF 35 FE EB 66 0F  ...?&Y.C.#.5..f.
+0040: 13 DD C7 A3 39 38 61 16   70 3C C4 CF ED FB 34 C5  ....98a.p<....4.
+0050: E9 54 A8 3A E7 C0 C0 7A   3F 27 90 00 03 D4 8F 9B  .T.:...z?'......
+0060: F9 E6 D4 1D 9C AD 20 F1   A4 BF DF 4E 06 17 30 98  ...... ....N..0.
+0070: 55 0C DD 2F 63 43 D4 A1   FE 6E 07 E2 79 56 56 D7  U../cC...n..yVV.
+0080: E2 53 97 BA 44 44 F5 45   1B E2 40 9F C2 4D D7 5F  .S..DD.E..@..M._
+0090: 8D D9 6A 73 16 89 49 3E   E5 1F BB 11 52 06 37 97  ..js..I>....R.7.
+00A0: CB 21 BF 21 A6 34 22 0D   3A CA E7 F5 84 98 A6 39  .!.!.4".:......9
+00B0: 0F A5 42 18 36 88 1E 7D   93 37 EE 55 05 00 90 57  ..B.6....7.U...W
+00C0: 42 9A 41 A8 40 CC DC 49   6A F8 5B 76 48 01 13 7B  B.A.@..Ij.[vH...
+00D0: 1B 81 BB B8 26 5D BD 4D   27 95 1D 7E 20 2F A2 12  ....&].M'... /..
+00E0: F8 A1 83 30 21 78 33 05   02 DE C0 4C 06 A7 6D FF  ...0!x3....L..m.
+00F0: 29 DC 0C 7F BB 4F D1 40   B4 04 19 AF 38 9F 4A 5A  )....O.@....8.JZ
+
+]
+2024-02-08T17:18:47.480+01:00 DEBUG 36514 --- [nio-8443-exec-5] .w.a.p.x.SubjectDnX509PrincipalExtractor : Subject DN is 'CN=postman.pqc.test.com, OU=OU, O=OU, L=Frankfurt, ST=hessen, C=DE'
+2024-02-08T17:18:47.480+01:00 DEBUG 36514 --- [nio-8443-exec-5] .w.a.p.x.SubjectDnX509PrincipalExtractor : Extracted Principal name is 'postman.pqc.test.com'
+2024-02-08T17:18:47.480+01:00 DEBUG 36514 --- [nio-8443-exec-5] o.s.s.w.a.p.x.X509AuthenticationFilter   : preAuthenticatedPrincipal = postman.pqc.test.com, trying to authenticate
+2024-02-08T17:18:47.481+01:00 DEBUG 36514 --- [nio-8443-exec-5] o.s.s.w.a.p.x.X509AuthenticationFilter   : X.509 client authentication certificate:[
+[
+  Version: V1
+  Subject: CN=postman.pqc.test.com, OU=OU, O=OU, L=Frankfurt, ST=hessen, C=DE
+  Signature Algorithm: SHA256withRSA, OID = 1.2.840.113549.1.1.11
+
+  Key:  Sun RSA public key, 2048 bits
+  params: null
+  modulus: 26779498707652174346926121994212485571357139166714608661717862713963301894197882779325064283570124297259627761877510367360291710035355489884301644772977914802994282339013989457812111873181366983357362896175549598277953681249152125033752042379740180427942008385023362678610942204619206359370123239323881164622637001190332200873421325484231944196418277663733962424203332491438713932100433502527991128862904170808957723015251315801975341605988913083273711665917227247285819339922505969500470671025835753692676511593986775474354902716736038780252571850118305443085072185584318747409903713083355371825059621695587435015611
+  public exponent: 65537
+  Validity: [From: Wed Feb 07 23:09:24 CET 2024,
+               To: Wed Jun 11 00:09:24 CEST 3023]
+  Issuer: L=San Fransisco, C=US, CN=demo.root.com
+  SerialNumber: [    01]
+
+]
+  Algorithm: [SHA256withRSA]
+  Signature:
+0000: 2C E4 6F 06 75 E7 2E 79   96 DA 0E 59 8C 41 E3 31  ,.o.u..y...Y.A.1
+0010: C7 A3 39 8D 6B 71 14 5D   FD 6C 14 35 6B FF 4D F8  ..9.kq.].l.5k.M.
+0020: 43 78 2B 3C AF 91 F3 C4   B0 4D D8 46 63 9A 64 E3  Cx+<.....M.Fc.d.
+0030: F6 98 8C 3F 26 59 D8 43   9E 23 CF 35 FE EB 66 0F  ...?&Y.C.#.5..f.
+0040: 13 DD C7 A3 39 38 61 16   70 3C C4 CF ED FB 34 C5  ....98a.p<....4.
+0050: E9 54 A8 3A E7 C0 C0 7A   3F 27 90 00 03 D4 8F 9B  .T.:...z?'......
+0060: F9 E6 D4 1D 9C AD 20 F1   A4 BF DF 4E 06 17 30 98  ...... ....N..0.
+0070: 55 0C DD 2F 63 43 D4 A1   FE 6E 07 E2 79 56 56 D7  U../cC...n..yVV.
+0080: E2 53 97 BA 44 44 F5 45   1B E2 40 9F C2 4D D7 5F  .S..DD.E..@..M._
+0090: 8D D9 6A 73 16 89 49 3E   E5 1F BB 11 52 06 37 97  ..js..I>....R.7.
+00A0: CB 21 BF 21 A6 34 22 0D   3A CA E7 F5 84 98 A6 39  .!.!.4".:......9
+00B0: 0F A5 42 18 36 88 1E 7D   93 37 EE 55 05 00 90 57  ..B.6....7.U...W
+00C0: 42 9A 41 A8 40 CC DC 49   6A F8 5B 76 48 01 13 7B  B.A.@..Ij.[vH...
+00D0: 1B 81 BB B8 26 5D BD 4D   27 95 1D 7E 20 2F A2 12  ....&].M'... /..
+00E0: F8 A1 83 30 21 78 33 05   02 DE C0 4C 06 A7 6D FF  ...0!x3....L..m.
+00F0: 29 DC 0C 7F BB 4F D1 40   B4 04 19 AF 38 9F 4A 5A  )....O.@....8.JZ
+
+]
+2024-02-08T17:18:47.482+01:00 TRACE 36514 --- [nio-8443-exec-5] o.s.s.authentication.ProviderManager     : Authenticating request with PreAuthenticatedAuthenticationProvider (1/2)
+2024-02-08T17:18:47.482+01:00 DEBUG 36514 --- [nio-8443-exec-5] p.PreAuthenticatedAuthenticationProvider : PreAuthenticated authentication request: PreAuthenticatedAuthenticationToken [Principal=postman.pqc.test.com, Credentials=[PROTECTED], Authenticated=false, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[]]
+2024-02-08T17:18:47.483+01:00 TRACE 36514 --- [nio-8443-exec-5] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'delegatingApplicationListener'
+2024-02-08T17:18:47.483+01:00 DEBUG 36514 --- [nio-8443-exec-5] o.s.s.w.a.p.x.X509AuthenticationFilter   : Authentication success: PreAuthenticatedAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=postman.pqc.test.com, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[ROLE_USER]]
+2024-02-08T17:18:47.483+01:00 TRACE 36514 --- [nio-8443-exec-5] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'delegatingApplicationListener'
+-------------
