@@ -261,4 +261,4 @@ validate the Keyshare or kem greoup used in each connection by scanning the conn
 
 Though the connection is routed via the Stunnel Client --> Stunnel Server --> Spring boot App the actual authenticaiton to the app is done with the context of the certificate used at the postman side, This proves that though we implement the Stunnel in b/w the Client and app the existing mTLS connection should work without any problem
 
-TLS connection data is been captured and stored [offical site](https://github.com/mukeshmohanan/stunnel-pqc-oqsprovider/tree/main/diagram_screenshots) for your reference
+TLS connection data is been captured and stored [here](https://github.com/mukeshmohanan/stunnel-pqc-oqsprovider/tree/main/diagram_screenshots) for your reference
