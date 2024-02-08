@@ -229,10 +229,16 @@ aishwaryanarayanan@Aishwaryas-MBP src % ./stunnel stunnel_client.conf
 [ ] Initializing inetd mode configuration
 aishwaryanarayanan@Aishwaryas-MBP src %
 ```
-# Start the Spring boot application  
+#### Start the Spring boot application  
 
 
 Its been configured to use mTLS and clients autherization is done by whitelisting the CN name of the client (Not Stunnel client the actual client app) certificate , please refer 
 [here](https://github.com/mukeshmohanan/stunnel-pqc-oqsprovider/blob/6942b74980096e8995c1761cf6e81352d2a556bd/example-spring-rest-service/complete/src/main/java/com/example/restservice/config/SecurityConfiguration.java#L35)
 
-
+```
+aishwaryanarayanan@Aishwaryas-MBP complete % pwd
+/Users/aishwaryanarayanan/mukesh/oqs/sample_spring_boot/gs-rest-service/complete
+aishwaryanarayanan@Aishwaryas-MBP complete % 
+aishwaryanarayanan@Aishwaryas-MBP complete % 
+aishwaryanarayanan@Aishwaryas-MBP complete % java -jar target/rest-service-complete-0.0.1-SNAPSHOT.jar --trace -Djavax.net.debug=ssl:handshake:keymanager
+```
