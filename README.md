@@ -128,7 +128,108 @@ curve = kyber768:frodo640shake:x25519_kyber512:x25519
 aishwaryanarayanan@Aishwaryas-MBP oqs % 
 ```
 
+####Stunnel Service Start 
+
+```
+aishwaryanarayanan@Aishwaryas-MBP src % ./stunnel stunnel.conf
+[ ] Initializing inetd mode configuration
+[ ] Clients allowed=31999
+[.] stunnel 5.70 on aarch64-apple-darwin22.5.0 platform
+[.] Compiled/running with OpenSSL 3.2.0-dev 
+[.] Threading:PTHREAD Sockets:POLL,IPv6 TLS:ENGINE,OCSP,PSK,SNI
+[ ] errno: (*__error())
+[ ] Initializing inetd mode configuration
+[.] Reading configuration from file /Users/aishwaryanarayanan/mukesh/oqs/stunnel-5.70/src/stunnel.conf
+[.] UTF-8 byte order mark not detected
+[.] FIPS mode disabled
+[ ] Compression disabled
+[ ] No PRNG seeding was required
+[ ] Initializing service [https]
+[ ] OpenSSL security level is used: 2
+[ ] Ciphers: HIGH:!aNULL:!SSLv2:!DH:!kDHEPSK
+[ ] TLSv1.3 ciphersuites: TLS_AES_256_GCM_SHA384:TLS_AES_128_GCM_SHA256:TLS_CHACHA20_POLY1305_SHA256
+[ ] TLS options: 0x2100000 (+0x0, -0x0)
+[ ] Session resumption enabled
+[ ] Loading certificate from file: /Users/aishwaryanarayanan/mukesh/oqs/server-cert.pem
+[ ] Certificate loaded from file: /Users/aishwaryanarayanan/mukesh/oqs/server-cert.pem
+[ ] Loading private key from file: /Users/aishwaryanarayanan/mukesh/oqs/server-key.pem
+[:] Insecure file permissions on /Users/aishwaryanarayanan/mukesh/oqs/server-key.pem
+[ ] Private key loaded from file: /Users/aishwaryanarayanan/mukesh/oqs/server-key.pem
+[ ] Private key check succeeded
+[ ] No trusted certificates found
+[ ] DH initialization skipped: no DH ciphersuites
+[ ] ECDH initialization
+[ ] ECDH initialized with curves kyber768:frodo640shake:x25519_kyber512:x25519
+[.] Configuration successful
+[ ] Deallocating deployed section defaults
+[ ] Binding service [https]
+[ ] Listening file descriptor created (FD=9)
+[ ] Setting accept socket options (FD=9)
+[ ] Option SO_REUSEADDR set on accept socket
+[.] Binding service [https] to :::11113: Address already in use (48)
+[ ] Listening file descriptor created (FD=9)
+[ ] Setting accept socket options (FD=9)
+[ ] Option SO_REUSEADDR set on accept socket
+[.] Binding service [https] to 0.0.0.0:11113: Address already in use (48)
+[!] Binding service [https] failed
+[ ] Unbinding service [https]
+[ ] Service [https] closed
+[ ] Deallocating deployed section defaults
+[ ] Deallocating section [https]
+[ ] Initializing inetd mode configuration
+aishwaryanarayanan@Aishwaryas-MBP src %
+```
+aishwaryanarayanan@Aishwaryas-MBP src % ./stunnel stunnel_client.conf
+[ ] Initializing inetd mode configuration
+[ ] Clients allowed=31999
+[.] stunnel 5.70 on aarch64-apple-darwin22.5.0 platform
+[.] Compiled/running with OpenSSL 3.2.0-dev 
+[.] Threading:PTHREAD Sockets:POLL,IPv6 TLS:ENGINE,OCSP,PSK,SNI
+[ ] errno: (*__error())
+[ ] Initializing inetd mode configuration
+[.] Reading configuration from file /Users/aishwaryanarayanan/mukesh/oqs/stunnel-5.70/src/stunnel_client.conf
+[.] UTF-8 byte order mark not detected
+[.] FIPS mode disabled
+[ ] Compression disabled
+[ ] No PRNG seeding was required
+[ ] Initializing service [https]
+[ ] OpenSSL security level is used: 2
+[ ] Ciphers: HIGH:!aNULL:!SSLv2:!DH:!kDHEPSK
+[ ] TLSv1.3 ciphersuites: TLS_AES_256_GCM_SHA384:TLS_AES_128_GCM_SHA256:TLS_CHACHA20_POLY1305_SHA256
+[ ] TLS options: 0x2100000 (+0x0, -0x0)
+[ ] Session resumption enabled
+[ ] Loading certificate from file: /Users/aishwaryanarayanan/mukesh/oqs/client-cert.pem
+[ ] Certificate loaded from file: /Users/aishwaryanarayanan/mukesh/oqs/client-cert.pem
+[ ] Loading private key from file: /Users/aishwaryanarayanan/mukesh/oqs/client-key.pem
+[:] Insecure file permissions on /Users/aishwaryanarayanan/mukesh/oqs/client-key.pem
+[ ] Private key loaded from file: /Users/aishwaryanarayanan/mukesh/oqs/client-key.pem
+[ ] Private key check succeeded
+[ ] Configured trusted server CA: CN=demo.root.com, C=US, L=San Fransisco
+[:] Service [https] needs authentication to prevent MITM attacks
+[ ] DH initialization skipped: client section
+[ ] ECDH initialization
+[ ] ECDH initialized with curves kyber768:frodo640shake:x25519_kyber512:x25519
+[.] Configuration successful
+[ ] Deallocating deployed section defaults
+[ ] Binding service [https]
+[ ] Listening file descriptor created (FD=9)
+[ ] Setting accept socket options (FD=9)
+[ ] Option SO_REUSEADDR set on accept socket
+[.] Binding service [https] to :::11111: Address already in use (48)
+[ ] Listening file descriptor created (FD=9)
+[ ] Setting accept socket options (FD=9)
+[ ] Option SO_REUSEADDR set on accept socket
+[.] Binding service [https] to 0.0.0.0:11111: Address already in use (48)
+[!] Binding service [https] failed
+[ ] Unbinding service [https]
+[ ] Service [https] closed
+[ ] Deallocating deployed section defaults
+[ ] Deallocating section [https]
+[ ] Initializing inetd mode configuration
+aishwaryanarayanan@Aishwaryas-MBP src %
+```
 # Start the Spring boot application  
+
 
 Its been configured to use mTLS and clients autherization is done by whitelisting the CN name of the client (Not Stunnel client the actual client app) certificate , please refer 
 [here](https://github.com/mukeshmohanan/stunnel-pqc-oqsprovider/blob/6942b74980096e8995c1761cf6e81352d2a556bd/example-spring-rest-service/complete/src/main/java/com/example/restservice/config/SecurityConfiguration.java#L35)
