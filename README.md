@@ -41,7 +41,8 @@ Providers:
   
     name: OpenSSL OQS Provider
     version: 0.5.2-dev
-    status: active
+    status: active  
+    
 mukesh@Mukeshs-MBP bin % 
 
 ### ReConfigure Openssl 3.x to use specific algorithms with PQC algorithms as preffered one for TLS 
