@@ -128,7 +128,8 @@ curve = kyber768:frodo640shake:x25519_kyber512:x25519
 aishwaryanarayanan@Aishwaryas-MBP oqs % 
 ```
 
-# Start the Spring boot application 
-Its been configured to use mTLS and clients autherization is done by whitelisting the CN name of the client (Not Stunnel client the actual client app) certificate , please refer [offical site] (https://github.com/mukeshmohanan/stunnel-pqc-oqsprovider/blob/6942b74980096e8995c1761cf6e81352d2a556bd/example-spring-rest-service/complete/src/main/java/com/example/restservice/config/SecurityConfiguration.java#L35)
+# Start the Spring boot application  
+
+Its been configured to use mTLS and clients autherization is done by whitelisting the CN name of the client (Not Stunnel client the actual client app) certificate , please refer [here ] (https://github.com/mukeshmohanan/stunnel-pqc-oqsprovider/blob/6942b74980096e8995c1761cf6e81352d2a556bd/example-spring-rest-service/complete/src/main/java/com/example/restservice/config/SecurityConfiguration.java#L35)
 
 
