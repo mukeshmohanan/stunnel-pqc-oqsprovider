@@ -68,7 +68,7 @@ configure the stunnel to point to the directory where openssl 3.x is available ,
 
 #### Server side config
 
-# Classical RSA signed Certificates are used in the stunnel instances , which means kem is handled using PQC algorithm not the authentication piece 
+#Classical RSA signed Certificates are used in the stunnel instances , which means kem is handled using PQC algorithm not the authentication piece 
 
 #Kyber768 would be the preffered algorithm used be the stunnel service for TLS handshake 
 
