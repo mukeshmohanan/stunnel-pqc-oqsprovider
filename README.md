@@ -46,21 +46,33 @@ mukesh@Mukeshs-MBP bin %
 
 This can be achived by amending below section in the openssl.cnf as shown in the below 
 
-[openssl_init]
-providers = provider_sect
-ssl_conf = ssl_sect
+[openssl_init]  
 
-[ssl_sect]
-system_default = system_default_sect
+providers = provider_sect  
 
-[system_default_sect]
-Groups = kyber768:kyber1024:X25519:P-256:X448:P-521:P-384:dilithium3
-#Groups = kyber768:kyber1024
+ssl_conf = ssl_sect  
 
-[provider_sect]
-default = default_sect
-#default = oqsprovider_sect
-oqsprovider = oqsprovider_sect
+
+[ssl_sect]  
+
+system_default = system_default_sect  
+
+
+[system_default_sect]  
+
+Groups = kyber768:kyber1024:X25519:P-256:X448:P-521:P-384:dilithium3  
+
+#Groups = kyber768:kyber1024  
+
+
+[provider_sect]  
+
+default = default_sect  
+
+#default = oqsprovider_sect  
+
+oqsprovider = oqsprovider_sect  
+
 
 ### Stunnel Build 
 Download the stunnel zipped file from the [offical site] (https://www.stunnel.org/downloads.html) and extract the same 
