@@ -23,6 +23,7 @@ Follow the build procedure outlined in the [official page ] (https://github.com/
 
 Verify the openss 3.x have the oqs provider available as a default option , example output shown below
 
+```
 aishwaryanarayanan@Aishwaryas-MBP bin % pwd  
 
 /Users/aishwaryanarayanan/mukesh/oqs/oqs-provider/.local/bin  
@@ -64,7 +65,6 @@ Groups = kyber768:kyber1024:X25519:P-256:X448:P-521:P-384:dilithium3
 
 #Groups = kyber768:kyber1024  
 
-
 [provider_sect]  
 
 default = default_sect  
@@ -73,6 +73,7 @@ default = default_sect
 
 oqsprovider = oqsprovider_sect  
 
+```
 
 ### Stunnel Build 
 Download the stunnel zipped file from the [offical site] (https://www.stunnel.org/downloads.html) and extract the same 
