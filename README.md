@@ -35,7 +35,8 @@ Providers:
   
     name: OpenSSL Default Provider
     version: 3.2.0
-    status: active
+    status: active  
+    
   oqsprovider
     name: OpenSSL OQS Provider
     version: 0.5.2-dev
