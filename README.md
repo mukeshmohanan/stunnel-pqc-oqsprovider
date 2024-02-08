@@ -28,17 +28,14 @@ aishwaryanarayanan@Aishwaryas-MBP bin % pwd
 /Users/aishwaryanarayanan/mukesh/oqs/oqs-provider/.local/bin  
 
 mukesh@Mukeshs-MBP bin % ./openssl list -providers  
-
 Providers:  
 
   default  
-  
     name: OpenSSL Default Provider
     version: 3.2.0
     status: active  
     
   oqsprovider  
-  
     name: OpenSSL OQS Provider
     version: 0.5.2-dev
     status: active  
