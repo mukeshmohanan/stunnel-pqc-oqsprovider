@@ -10,7 +10,7 @@ For this test both the client Instances and Server Instances are deployed in sam
 # Overall Build Steps 
 
 ## Openssl 3.x build 
-Follow the standard Openssl build process [here]([https://website-name.com](https://github.com/openssl/openssl/blob/master/NOTES-UNIX.md)https://github.com/openssl/openssl/blob/master/NOTES-UNIX.md) to get the 3.x version of the same
+Follow the standard Openssl build process [here]([https://website-name.com](https://github.com/openssl/openssl/blob/master/NOTES-UNIX.md)https://github.com/openssl/openssl/blob/master/NOTES-UNIX.md) to get the 3.x version of the same 
 
 ### liboqs build using the openssl 3.x version
 
@@ -22,7 +22,7 @@ Follow the build procedure outlined in the [official page ] (https://github.com/
 
 Verify the openss 3.x have the oqs provider available as a default option , example output shown below
 
-aishwaryanarayanan@Aishwaryas-MBP bin % pwd
+aishwaryanarayanan@Aishwaryas-MBP bin % pwd 
 /Users/aishwaryanarayanan/mukesh/oqs/oqs-provider/.local/bin
 mukesh@Mukeshs-MBP bin % ./openssl list -providers
 Providers:
