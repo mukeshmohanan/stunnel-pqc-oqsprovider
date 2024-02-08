@@ -43,21 +43,22 @@ Providers:
     
 mukesh@Mukeshs-MBP bin % 
 
+```
+
 ### ReConfigure Openssl 3.x to use specific algorithms with PQC algorithms as preffered one for TLS 
 
 This can be achived by amending below section in the openssl.cnf as shown in the below 
 
+```
 [openssl_init]  
 
 providers = provider_sect  
 
 ssl_conf = ssl_sect  
 
-
 [ssl_sect]  
 
 system_default = system_default_sect  
-
 
 [system_default_sect]  
 
@@ -79,10 +80,11 @@ oqsprovider = oqsprovider_sect
 Download the stunnel zipped file from the [offical site] (https://www.stunnel.org/downloads.html) and extract the same 
 configure the stunnel to point to the directory where openssl 3.x is available , make sure that there is no errors 
 
+```
 #mukesh@Mukeshs-MBP src % pwd
 /Users/mukesh/oqs/stunnel-5.70/src
 #mukesh@Mukeshs-MBP src % ./configure --prefix=/Users/mukesh/mukesh/oqs/oqs-provider/.local
-
+```
 ### Stunnel configuration 
 
 #### Server side config
@@ -91,6 +93,7 @@ configure the stunnel to point to the directory where openssl 3.x is available ,
 
 #Kyber768 would be the preffered algorithm used be the stunnel service for TLS handshake 
 
+```
 aishwaryanarayanan@Aishwaryas-MBP oqs % cat stunnel-5.70/src/stunnel.conf
 #fips = yes
 debug = 7
@@ -105,9 +108,9 @@ cert = /Users/aishwaryanarayanan/mukesh/oqs/server-cert.pem
 key = /Users/aishwaryanarayanan/mukesh/oqs/server-key.pem
 #CAfile = /Users/aishwaryanarayanan/mukesh/oqs/RSArootCA.crt
 curve = kyber768:frodo640shake:x25519_kyber512:x25519
-
+```
 ##### Stunnel Client Instance configuration
-
+```
 aishwaryanarayanan@Aishwaryas-MBP oqs % cat stunnel-5.70/src/stunnel_client.conf
 #fips = yes
 debug = 7
@@ -123,7 +126,7 @@ key = /Users/aishwaryanarayanan/mukesh/oqs/client-key.pem
 CAfile = /Users/aishwaryanarayanan/mukesh/oqs/RSArootCA.crt
 curve = kyber768:frodo640shake:x25519_kyber512:x25519
 aishwaryanarayanan@Aishwaryas-MBP oqs % 
-
+```
 
 
 
