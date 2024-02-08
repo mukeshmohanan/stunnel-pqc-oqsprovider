@@ -96,7 +96,7 @@ Classical RSA signed Certificates are used in the stunnel instances in this impl
 
 Kyber768 would be the preffered algorithm used be the stunnel service for TLS handshake ,eg; as shown below which is included in both config file
 
-== curve = kyber768:frodo640shake:x25519_kyber512:x25519 == 
+==curve = kyber768:frodo640shake:x25519_kyber512:x25519== 
 
 #### Server side config
 
@@ -116,7 +116,7 @@ key = /Users/aishwaryanarayanan/mukesh/oqs/server-key.pem
 #CAfile = /Users/aishwaryanarayanan/mukesh/oqs/RSArootCA.crt
 curve = kyber768:frodo640shake:x25519_kyber512:x25519
 ```
-##### Stunnel Client Instance configuration
+#### Stunnel Client Instance configuration
 ```
 aishwaryanarayanan@Aishwaryas-MBP oqs % cat stunnel-5.70/src/stunnel_client.conf
 #fips = yes
@@ -135,7 +135,7 @@ curve = kyber768:frodo640shake:x25519_kyber512:x25519
 aishwaryanarayanan@Aishwaryas-MBP oqs % 
 ```
 
-####Stunnel Service Start 
+#### Stunnel Service Start Server Instance
 
 ```
 aishwaryanarayanan@Aishwaryas-MBP src % ./stunnel stunnel.conf
@@ -186,7 +186,7 @@ aishwaryanarayanan@Aishwaryas-MBP src % ./stunnel stunnel.conf
 [ ] Initializing inetd mode configuration
 aishwaryanarayanan@Aishwaryas-MBP src %
 ```
-####Stunnel Service Start 
+#### Stunnel Service Start client Instance 
 ```
 aishwaryanarayanan@Aishwaryas-MBP src % ./stunnel stunnel_client.conf
 [ ] Initializing inetd mode configuration
