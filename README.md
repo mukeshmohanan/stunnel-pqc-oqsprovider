@@ -10,7 +10,7 @@ For this test both the client Instances and Server Instances are deployed in sam
 # Overall Build Steps 
 
 ## Openssl 3.x build 
-Follow the standard Openssl build process ![here](https://website-name.com](https://github.com/openssl/openssl/blob/master/NOTES-UNIX.md)https://github.com/openssl/openssl/blob/master/NOTES-UNIX.md) to get the 3.x version of the same  
+Follow the standard Openssl build process [here](https://website-name.com](https://github.com/openssl/openssl/blob/master/NOTES-UNIX.md)https://github.com/openssl/openssl/blob/master/NOTES-UNIX.md) to get the 3.x version of the same  
 
 
 ### liboqs build using the openssl 3.x version
