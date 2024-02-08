@@ -128,6 +128,7 @@ curve = kyber768:frodo640shake:x25519_kyber512:x25519
 aishwaryanarayanan@Aishwaryas-MBP oqs % 
 ```
 
-
+# Start the Spring boot application 
+Its been configured to use mTLS and clients autherization is done by whitelisting the CN name 
 
 
