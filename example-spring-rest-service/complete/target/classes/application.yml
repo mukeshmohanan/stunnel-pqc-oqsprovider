@@ -1,0 +1,19 @@
+server:
+  ssl:
+    enabled: true
+    # Key store configuration
+    key-store: classpath:keystore.p12  # Path to your keystore file
+    key-store-password: mukesh@123  # Password for the keystore
+    #key-alias: key  # Alias for your key within the keystore
+    key-password: mukesh@123 # Password for the key
+    key-store-type: PKCS12
+
+    # Trust store configuration (optional)
+    trust-store: classpath:truststore.p12  # Path to your truststore file
+    trust-store-password: mukesh@123  # Password for the truststore
+    client-auth: need
+    trust-store-type: PKCS12
+
+  # Enable HTTPS on specific port
+    
+  port: 8443
