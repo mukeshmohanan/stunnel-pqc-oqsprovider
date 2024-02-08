@@ -10,6 +10,8 @@ For this test both the client Instances and Server Instances are deployed in sam
 
 ![deployment](diagram_screenshots/stunne_pqc.drawio.svg)
 
+As shown in the figure connection from Stunnel Client (Deployed at Client Server ) to Stunnel Server Instance (Deployed at Server side) will be PQC https (protected from Quantum Attack) as Stunnel is configured to use Kyber algorithm for TLS key exchange
+
 # Overall Build Steps 
 
 ## Openssl 3.x build 
@@ -247,7 +249,7 @@ aishwaryanarayanan@Aishwaryas-MBP complete % java -jar target/rest-service-compl
 ```
 #### Client connect
 
-Connect the spring boot API end point from Postman , connection is made via the socket connection to Stunnel client instance  , Please make sure to configure the client certiifcate (whose CN name whitelisetd in Springboot App) at the post man and also the CA certiifcate is configured 
+Connect the spring boot API end point from Postman , connection is made via the socket connection to Stunnel client instance  , Please make sure to configure the client certiifcate (whose CN name whitelisetd in Springboot App) at the post man and also the CA certificate is configured accordingly
 
 #### Verification of TLS connection 
 
@@ -255,3 +257,5 @@ validate the Keyshare or kem greoup used in each connection by scanning the conn
 
 
 Though the connection is routed via the Stunnel Client --> Stunnel Server --> Spring boot App the actual authenticaiton to the app is done with the context of the certificate used at the postman side, This proves that though we implement the Stunnel in b/w the Client and app the existing mTLS connection should work without any problem
+
+TLS connection data is been captured and stored [offical site](https://github.com/mukeshmohanan/stunnel-pqc-oqsprovider/tree/main/diagram_screenshots) for your reference
