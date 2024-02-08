@@ -4,4 +4,4 @@ This repo contains prcoedure to build Stunnel to support PQC algorithm (For Secu
 
 For this test both the client Instances and Server Instances are deployed in same localhost 
 
-# Target Archiecture 
+# Target Deployment model 
