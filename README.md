@@ -15,11 +15,11 @@ Follow the standard Openssl build process [here](https://github.com/openssl/open
 
 ### liboqs build using the openssl 3.x version
 
-follow the standard procedure defined [here]([https://website-name.com](https://github.com/open-quantum-safe/liboqs#linuxmacos) , make sure that liboqs built id done using the openssl version built in the previous step 
+follow the standard procedure defined [here](https://github.com/open-quantum-safe/liboqs#linuxmacos) , make sure that liboqs built id done using the openssl version built in the previous step 
 
 ### oqsprovider build 
 
-Follow the build procedure outlined in the [official page ] (https://github.com/open-quantum-safe/oqs-provider/blob/main/README.md) liboqs and openssl 3.x is pre-requiiste this should be already available follwing the previous steps
+Follow the build procedure outlined in the [official page](https://github.com/open-quantum-safe/oqs-provider/blob/main/README.md) liboqs and openssl 3.x is pre-requiiste this should be already available follwing the previous steps
 
 Verify the openss 3.x have the oqs provider available as a default option , example output shown below
 
