@@ -96,7 +96,7 @@ Classical RSA signed Certificates are used in the stunnel instances in this impl
 
 Kyber768 would be the preffered algorithm used be the stunnel service for TLS handshake ,eg; as shown below which is included in both config file
 
-==curve=kyber768:frodo640shake:x25519_kyber512:x25519== 
+<mark> curve=kyber768:frodo640shake:x25519_kyber512:x25519 </mark>.
 
 #### Server side config
 
