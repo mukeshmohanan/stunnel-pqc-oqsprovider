@@ -77,7 +77,7 @@ oqsprovider = oqsprovider_sect
 ```
 
 ### Stunnel Build 
-Download the stunnel zipped file from the [offical site] (https://www.stunnel.org/downloads.html) and extract the same 
+Download the stunnel zipped file from the [offical site](https://www.stunnel.org/downloads.html) and extract the same 
 configure the stunnel to point to the directory where openssl 3.x is available , make sure that there is no errors 
 
 ```
