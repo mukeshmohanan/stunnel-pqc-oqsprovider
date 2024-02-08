@@ -92,11 +92,13 @@ configure the stunnel to point to the directory where openssl 3.x is available ,
 ```
 ### Stunnel configuration 
 
+Classical RSA signed Certificates are used in the stunnel instances in this implementation , which means kem is handled using PQC algorithm not the authentication piece 
+
+Kyber768 would be the preffered algorithm used be the stunnel service for TLS handshake ,eg; as shown below which is included in both config file
+
+== curve = kyber768:frodo640shake:x25519_kyber512:x25519 == 
+
 #### Server side config
-
-#Classical RSA signed Certificates are used in the stunnel instances , which means kem is handled using PQC algorithm not the authentication piece 
-
-#Kyber768 would be the preffered algorithm used be the stunnel service for TLS handshake 
 
 ```
 aishwaryanarayanan@Aishwaryas-MBP oqs % cat stunnel-5.70/src/stunnel.conf
@@ -215,7 +217,7 @@ aishwaryanarayanan@Aishwaryas-MBP src % ./stunnel stunnel_client.conf
 [:] Service [https] needs authentication to prevent MITM attacks
 [ ] DH initialization skipped: client section
 [ ] ECDH initialization
-[ ] ECDH initialized with curves == kyber768:frodo640shake:x25519_kyber512:x25519 ==
+[ ] ECDH initialized with curves  kyber768:frodo640shake:x25519_kyber512:x25519 
 [.] Configuration successful
 [ ] Deallocating deployed section defaults
 [ ] Binding service [https]
