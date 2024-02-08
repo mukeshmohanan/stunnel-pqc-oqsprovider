@@ -248,4 +248,5 @@ Connect the spring boot API end point from Postman , connection is made via the 
 
 #### Verification of TLS connection 
 
-validate the Keyshare or kem greoup used in each connection by scanning the connection using wireshark and also verify the Spring boot logs which authenitcate the certificate used at the postman side, Though the connection is routed via the Stunnel Client --> Stunnel Server --> Spring boot App the actual authenticaiton to the app is done with the context of the certificate used at the postman side, This proves that though we implement the Stunnel in b/w the Client and app the existing mTLS connection should work without any problem
+validate the Keyshare or kem greoup used in each connection by scanning the connection using wireshark and also verify the Spring boot logs which authenitcate the certificate used at the postman side.  
+Though the connection is routed via the Stunnel Client --> Stunnel Server --> Spring boot App the actual authenticaiton to the app is done with the context of the certificate used at the postman side, This proves that though we implement the Stunnel in b/w the Client and app the existing mTLS connection should work without any problem
