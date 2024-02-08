@@ -1,10 +1,13 @@
 # stunnel-with-pqc-oqsprovider
 
-This repo contains prcoedure to build Stunnel to support PQC algorithm (For Securing TLS connection) and use it to secure tls connection between a client and Server App (Spring boot) which support using pqc algorithm. The connection between the Stunnel Client and Stunnel Server Instances will be configured to use PQC algortihms(Kyber preferably in this example)
+This repo contains prcoedure to build Stunnel to support PQC algorithm (For Securing TLS connection) and instruction on how to use it to secure tls connection between a client and Server App (Spring boot) which support using pqc algorithm. The connection between the Stunnel Client and Stunnel Server Instances will be configured to use PQC algortihms(Kyber preferably in this example)
+
+This solution work based on the fundamental principle that any algorithm supported by Openssl should be consumable via the Stunnel, So if the underlying openssl is built with OQSprovider (pqc algorithm support) same algorithm should be configured in the Stunnel as well to secure the TLS connections
 
 For this test both the client Instances and Server Instances are deployed in same localhost 
 
-# Target Deployment model 
+# Deployment model 
+
 ![deployment](diagram_screenshots/stunne_pqc.drawio.svg)
 
 # Overall Build Steps 
