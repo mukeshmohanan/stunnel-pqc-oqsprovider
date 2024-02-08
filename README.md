@@ -14,7 +14,7 @@ As shown in the figure connection from Stunnel Client (Deployed at Client Server
 
 # Overall Build Steps 
 
-## Openssl 3.x build 
+### Openssl 3.x build 
 Follow the standard Openssl build process [here](https://github.com/openssl/openssl/blob/master/NOTES-UNIX.md) to get the 3.x version of the same  
 
 
@@ -184,6 +184,7 @@ aishwaryanarayanan@Aishwaryas-MBP src % ./stunnel stunnel.conf
 [ ] Initializing inetd mode configuration
 aishwaryanarayanan@Aishwaryas-MBP src %
 ```
+####Stunnel Service Start 
 ```
 aishwaryanarayanan@Aishwaryas-MBP src % ./stunnel stunnel_client.conf
 [ ] Initializing inetd mode configuration
@@ -214,7 +215,7 @@ aishwaryanarayanan@Aishwaryas-MBP src % ./stunnel stunnel_client.conf
 [:] Service [https] needs authentication to prevent MITM attacks
 [ ] DH initialization skipped: client section
 [ ] ECDH initialization
-[ ] ECDH initialized with curves kyber768:frodo640shake:x25519_kyber512:x25519
+[ ] ECDH initialized with curves == kyber768:frodo640shake:x25519_kyber512:x25519 ==
 [.] Configuration successful
 [ ] Deallocating deployed section defaults
 [ ] Binding service [https]
