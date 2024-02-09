@@ -29,9 +29,9 @@ Follow the build procedure outlined in the [official page](https://github.com/op
 Verify the openss 3.x have the oqs provider available as a default option , example output shown below
 
 ```
-aishwaryanarayanan@Aishwaryas-MBP bin % pwd  
+mukeshmohanan@Mukeshs-MBP bin % pwd  
 
-/Users/aishwaryanarayanan/mukesh/oqs/oqs-provider/.local/bin  
+/Users/mukeshmohanan/mukesh/oqs/oqs-provider/.local/bin  
 
 mukesh@Mukeshs-MBP bin % ./openssl list -providers  
 Providers:  
@@ -101,7 +101,7 @@ Kyber768 would be the preffered algorithm used be the stunnel service for TLS ha
 #### Server side config
 
 ```
-aishwaryanarayanan@Aishwaryas-MBP oqs % cat stunnel-5.70/src/stunnel.conf
+mukeshmohanan@Mukeshs-MBP oqs % cat stunnel-5.70/src/stunnel.conf
 #fips = yes
 debug = 7
 output = /usr/local/etc/stunnel/stunnel.log
@@ -111,14 +111,14 @@ output = /usr/local/etc/stunnel/stunnel.log
 accept  = 11113
 connect = 8443
 #transparent = source
-cert = /Users/aishwaryanarayanan/mukesh/oqs/server-cert.pem
-key = /Users/aishwaryanarayanan/mukesh/oqs/server-key.pem
-#CAfile = /Users/aishwaryanarayanan/mukesh/oqs/RSArootCA.crt
+cert = /Users/mukeshmohanan/mukesh/oqs/server-cert.pem
+key = /Users/mukeshmohanan/mukesh/oqs/server-key.pem
+#CAfile = /Users/mukeshmohanan/mukesh/oqs/RSArootCA.crt
 curve = kyber768:frodo640shake:x25519_kyber512:x25519
 ```
 #### Stunnel Client Instance configuration
 ```
-aishwaryanarayanan@Aishwaryas-MBP oqs % cat stunnel-5.70/src/stunnel_client.conf
+mukeshmohanan@Mukeshs-MBP oqs % cat stunnel-5.70/src/stunnel_client.conf
 #fips = yes
 debug = 7
 output = /usr/local/etc/stunnel/stunnel_client.log
@@ -128,17 +128,17 @@ client = yes
 accept  = 11111
 connect = 11113
 #transparent = source
-cert = /Users/aishwaryanarayanan/mukesh/oqs/client-cert.pem
-key = /Users/aishwaryanarayanan/mukesh/oqs/client-key.pem
-CAfile = /Users/aishwaryanarayanan/mukesh/oqs/RSArootCA.crt
+cert = /Users/mukeshmohanan/mukesh/oqs/client-cert.pem
+key = /Users/mukeshmohanan/mukesh/oqs/client-key.pem
+CAfile = /Users/mukeshmohanan/mukesh/oqs/RSArootCA.crt
 curve = kyber768:frodo640shake:x25519_kyber512:x25519
-aishwaryanarayanan@Aishwaryas-MBP oqs % 
+mukeshmohanan@Mukeshs-MBP oqs % 
 ```
 
 #### Stunnel Service Start Server Instance
 
 ```
-aishwaryanarayanan@Aishwaryas-MBP src % ./stunnel stunnel.conf
+mukeshmohanan@Mukeshs-MBP src % ./stunnel stunnel.conf
 [ ] Initializing inetd mode configuration
 [ ] Clients allowed=31999
 [.] stunnel 5.70 on aarch64-apple-darwin22.5.0 platform
@@ -146,7 +146,7 @@ aishwaryanarayanan@Aishwaryas-MBP src % ./stunnel stunnel.conf
 [.] Threading:PTHREAD Sockets:POLL,IPv6 TLS:ENGINE,OCSP,PSK,SNI
 [ ] errno: (*__error())
 [ ] Initializing inetd mode configuration
-[.] Reading configuration from file /Users/aishwaryanarayanan/mukesh/oqs/stunnel-5.70/src/stunnel.conf
+[.] Reading configuration from file /Users/mukeshmohanan/mukesh/oqs/stunnel-5.70/src/stunnel.conf
 [.] UTF-8 byte order mark not detected
 [.] FIPS mode disabled
 [ ] Compression disabled
@@ -157,11 +157,11 @@ aishwaryanarayanan@Aishwaryas-MBP src % ./stunnel stunnel.conf
 [ ] TLSv1.3 ciphersuites: TLS_AES_256_GCM_SHA384:TLS_AES_128_GCM_SHA256:TLS_CHACHA20_POLY1305_SHA256
 [ ] TLS options: 0x2100000 (+0x0, -0x0)
 [ ] Session resumption enabled
-[ ] Loading certificate from file: /Users/aishwaryanarayanan/mukesh/oqs/server-cert.pem
-[ ] Certificate loaded from file: /Users/aishwaryanarayanan/mukesh/oqs/server-cert.pem
-[ ] Loading private key from file: /Users/aishwaryanarayanan/mukesh/oqs/server-key.pem
-[:] Insecure file permissions on /Users/aishwaryanarayanan/mukesh/oqs/server-key.pem
-[ ] Private key loaded from file: /Users/aishwaryanarayanan/mukesh/oqs/server-key.pem
+[ ] Loading certificate from file: /Users/mukeshmohanan/mukesh/oqs/server-cert.pem
+[ ] Certificate loaded from file: /Users/mukeshmohanan/mukesh/oqs/server-cert.pem
+[ ] Loading private key from file: /Users/mukeshmohanan/mukesh/oqs/server-key.pem
+[:] Insecure file permissions on /Users/mukeshmohanan/mukesh/oqs/server-key.pem
+[ ] Private key loaded from file: /Users/mukeshmohanan/mukesh/oqs/server-key.pem
 [ ] Private key check succeeded
 [ ] No trusted certificates found
 [ ] DH initialization skipped: no DH ciphersuites
@@ -184,11 +184,11 @@ aishwaryanarayanan@Aishwaryas-MBP src % ./stunnel stunnel.conf
 [ ] Deallocating deployed section defaults
 [ ] Deallocating section [https]
 [ ] Initializing inetd mode configuration
-aishwaryanarayanan@Aishwaryas-MBP src %
+mukeshmohanan@Mukeshs-MBP src %
 ```
 #### Stunnel Service Start client Instance 
 ```
-aishwaryanarayanan@Aishwaryas-MBP src % ./stunnel stunnel_client.conf
+mukeshmohanan@Mukeshs-MBP src % ./stunnel stunnel_client.conf
 [ ] Initializing inetd mode configuration
 [ ] Clients allowed=31999
 [.] stunnel 5.70 on aarch64-apple-darwin22.5.0 platform
@@ -196,7 +196,7 @@ aishwaryanarayanan@Aishwaryas-MBP src % ./stunnel stunnel_client.conf
 [.] Threading:PTHREAD Sockets:POLL,IPv6 TLS:ENGINE,OCSP,PSK,SNI
 [ ] errno: (*__error())
 [ ] Initializing inetd mode configuration
-[.] Reading configuration from file /Users/aishwaryanarayanan/mukesh/oqs/stunnel-5.70/src/stunnel_client.conf
+[.] Reading configuration from file /Users/mukeshmohanan/mukesh/oqs/stunnel-5.70/src/stunnel_client.conf
 [.] UTF-8 byte order mark not detected
 [.] FIPS mode disabled
 [ ] Compression disabled
@@ -207,11 +207,11 @@ aishwaryanarayanan@Aishwaryas-MBP src % ./stunnel stunnel_client.conf
 [ ] TLSv1.3 ciphersuites: TLS_AES_256_GCM_SHA384:TLS_AES_128_GCM_SHA256:TLS_CHACHA20_POLY1305_SHA256
 [ ] TLS options: 0x2100000 (+0x0, -0x0)
 [ ] Session resumption enabled
-[ ] Loading certificate from file: /Users/aishwaryanarayanan/mukesh/oqs/client-cert.pem
-[ ] Certificate loaded from file: /Users/aishwaryanarayanan/mukesh/oqs/client-cert.pem
-[ ] Loading private key from file: /Users/aishwaryanarayanan/mukesh/oqs/client-key.pem
-[:] Insecure file permissions on /Users/aishwaryanarayanan/mukesh/oqs/client-key.pem
-[ ] Private key loaded from file: /Users/aishwaryanarayanan/mukesh/oqs/client-key.pem
+[ ] Loading certificate from file: /Users/mukeshmohanan/mukesh/oqs/client-cert.pem
+[ ] Certificate loaded from file: /Users/mukeshmohanan/mukesh/oqs/client-cert.pem
+[ ] Loading private key from file: /Users/mukeshmohanan/mukesh/oqs/client-key.pem
+[:] Insecure file permissions on /Users/mukeshmohanan/mukesh/oqs/client-key.pem
+[ ] Private key loaded from file: /Users/mukeshmohanan/mukesh/oqs/client-key.pem
 [ ] Private key check succeeded
 [ ] Configured trusted server CA: CN=demo.root.com, C=US, L=San Fransisco
 [:] Service [https] needs authentication to prevent MITM attacks
@@ -235,7 +235,7 @@ aishwaryanarayanan@Aishwaryas-MBP src % ./stunnel stunnel_client.conf
 [ ] Deallocating deployed section defaults
 [ ] Deallocating section [https]
 [ ] Initializing inetd mode configuration
-aishwaryanarayanan@Aishwaryas-MBP src %
+mukeshmohanan@Mukeshs-MBP src %
 ```
 #### Start the Spring boot application  
 
@@ -244,11 +244,11 @@ Spring boot API app been configured to use mTLS and clients autherization is don
 [here](https://github.com/mukeshmohanan/stunnel-pqc-oqsprovider/blob/6942b74980096e8995c1761cf6e81352d2a556bd/example-spring-rest-service/complete/src/main/java/com/example/restservice/config/SecurityConfiguration.java#L35)
 
 ```
-aishwaryanarayanan@Aishwaryas-MBP complete % pwd
-/Users/aishwaryanarayanan/mukesh/oqs/sample_spring_boot/gs-rest-service/complete
-aishwaryanarayanan@Aishwaryas-MBP complete % 
-aishwaryanarayanan@Aishwaryas-MBP complete % 
-aishwaryanarayanan@Aishwaryas-MBP complete % java -jar target/rest-service-complete-0.0.1-SNAPSHOT.jar --trace -Djavax.net.debug=ssl:handshake:keymanager
+mukeshmohanan@Mukeshs-MBP complete % pwd
+/Users/mukeshmohanan/mukesh/oqs/sample_spring_boot/gs-rest-service/complete
+mukeshmohanan@Mukeshs-MBP complete % 
+mukeshmohanan@Mukeshs-MBP complete % 
+mukeshmohanan@Mukeshs-MBP complete % java -jar target/rest-service-complete-0.0.1-SNAPSHOT.jar --trace -Djavax.net.debug=ssl:handshake:keymanager
 ```
 #### Client connect
 
